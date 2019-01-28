@@ -15,14 +15,6 @@ void Read(int& n, map<double, double>& point) {
     }
 }
 
-double In_Power(double a, int n) {
-    double k = a;
-    for (int i = 2; i <= n; ++i) {
-        a *= k;
-    }
-    return a;
-}
-
 vector<double> Determinants_calculation(double val[1000], map<double, double> point, int n) {
     double *val_2 = new double[n*n];
     for (int i = 0; i < n*n; ++i) {
